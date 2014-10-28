@@ -1,0 +1,5 @@
+rootProject.name = 'currency-converter'
+
+include ':app'
+
+project(':app').projectDir = "$rootDir/app" as File

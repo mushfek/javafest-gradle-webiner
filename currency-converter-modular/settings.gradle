@@ -1,0 +1,2 @@
+include ':libraries:log4android'
+include ':app'

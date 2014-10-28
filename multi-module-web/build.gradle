@@ -1,0 +1,9 @@
+allprojects {
+    group = 'net.therap.javafest'
+    version = '1.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+}

@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.2'
+    }
+}
+
+repositories {
+        mavenLocal()
+        mavenCentral()
+}
+
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile group: 'com.android.support', name: 'appcompat-v7', version: '19.0.+'
+
+    androidTestCompile group: 'junit', name: 'junit', version: '4.10'
+}
+
+android {
+    buildToolsVersion '19.1.0'
+    compileSdkVersion 19
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionName '1.0'
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            zipAlign true
+        }
+
+        release {
+            zipAlign true
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}

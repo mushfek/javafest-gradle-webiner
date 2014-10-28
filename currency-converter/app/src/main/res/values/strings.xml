@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BDT To USD Converter</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="bdt_amount_hint">Amount in BDT</string>
+    <string name="usd_amount_msg">Amount In USD</string>
+    <string name="convert_button_text">Convert</string>
+</resources>
